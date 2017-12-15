@@ -31,10 +31,7 @@ include @parent in the .blade.php file if you would like to show the parent cont
             @yield('content')
         </div>
 
-        @section('sidebar')
-        <div class="sidebar">
-            this is the sidebar
-            @show
-        </div>
+        @include('inc.sidebar')
+
     </body>
 </html>
