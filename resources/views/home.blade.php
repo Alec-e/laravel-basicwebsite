@@ -8,7 +8,7 @@
 
 
 @section('content')
-<h1>homepage</h1>
+<h1>homepage!!</h1>
 <p>content</p>
 @endsection
 

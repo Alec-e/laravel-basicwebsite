@@ -15,23 +15,23 @@ include @parent in the .blade.php file if you would like to show the parent cont
     <head>
         <meta charset="utf-8">
         <title>Acme</title>
+        <link rel="stylesheet" href="/css/app.css">
     </head>
-    <style>
-        .main_content {
-            margin-left: 50px;
-            background-color: orange;
-        }
-        .test_content {
-            margin-left: 20px;
-            background-color: blue;
-        }
-    </style>
-    <body>
-        <div class='main_content'>
-            @yield('content')
-        </div>
 
-        @include('inc.sidebar')
+    <body>
+        @include('inc.navbar')
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8">
+                @yield('content')
+            </div>
+            <div class="col-md-4 col-lg-4">
+                @include('inc.sidebar')
+            </div>
+        </div>
+    </div>
+
 
     </body>
 </html>
