@@ -20,10 +20,13 @@ include @parent in the .blade.php file if you would like to show the parent cont
 
     <body>
         @include('inc.navbar')
-        
+        @if(Request::is('home'))
+            @include('inc.showcase')
+        @endif
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-8">
+                @include('inc.messages')
                 @yield('content')
             </div>
             <div class="col-md-4 col-lg-4">
@@ -31,7 +34,12 @@ include @parent in the .blade.php file if you would like to show the parent cont
             </div>
         </div>
     </div>
-
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <p>built by Michele Kempinsky</p>
+        </div>
+    </footer>
 
     </body>
+
 </html>

@@ -5734,4 +5734,12 @@ button.close {
   background: #89A7C6;
   border-radius: 0; }
 
+.footer {
+  background: #89A7C6;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; }
+
 /*# sourceMappingURL=app.css.map */
