@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Message;
 
 class MessagesController extends Controller
 {
@@ -14,6 +15,19 @@ class MessagesController extends Controller
     		'email' => 'required'
     	]);
 
-    	return 'SUCCESS';
+    	// Create New Message
+
+    	$message = new Message;
+    	$message->name = $request->input('name');
+    	$message->email = $request->input('email');
+    	$message->message = $request->input('message');
+
+    	// save  Message
+
+    	$message->save();
+
+    	// Redirect
+
+    	return redirect('/home')->with('success', 'Message Sent');
     }
 }

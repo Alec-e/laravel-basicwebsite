@@ -2,9 +2,9 @@
   <div class="container">
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><button class="btn"><a href="/home">Home</a></button></li>
+        <li><button class="btn"><a href="/about">About</a></button></li>
+        <li><button class="btn"><a href="/contact">Contact</a></button></li>
       </ul>
   </div>
 </nav>

@@ -5732,7 +5732,22 @@ button.close {
 
 .navbar {
   background: #89A7C6;
-  border-radius: 0; }
+  border-radius: 0;
+  margin: 0;
+  padding: 20px 0px; }
+  .navbar button {
+    margin-right: 10px; }
+  .navbar button:hover {
+    background: #526476;
+    transition: all 0.5s; }
+  .navbar a {
+    text-decoration: none;
+    color: #89A7C6;
+    font-weight: bold; }
+  .navbar a:hover {
+    color: #fff;
+    background: #89A7C6;
+    transition: all 0.5s; }
 
 .footer {
   background: #89A7C6;

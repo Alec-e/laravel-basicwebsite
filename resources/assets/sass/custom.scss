@@ -1,10 +1,33 @@
 // CUSTOM SCSS
 
 $light-blue : #89A7C6;
+$charcol-blue : #526476;
+$hover : .5s;
 
 .navbar {
 	background: $light-blue;
 	border-radius: 0;
+	margin: 0;
+	padding: 20px 0px;
+	
+	button {
+		margin-right: 10px;
+
+	}
+	button:hover {
+		background: $charcol-blue;
+		transition: all $hover;
+	}
+	a {
+		text-decoration: none;
+		color: $light-blue;
+		font-weight: bold;
+	}
+	a:hover {
+		color: #fff;
+		background: $light-blue;
+		transition: all $hover;
+	}
 }
 .footer {
 	background: $light-blue;
