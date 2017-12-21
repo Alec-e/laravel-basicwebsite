@@ -14,6 +14,11 @@ $hover : .5s;
 		margin-right: 10px;
 
 	}
+	.btn:active, .btn.active {
+		background: $charcol-blue;
+		box-shadow: none;
+		color: #fff;
+	}
 	button:hover {
 		background: $charcol-blue;
 		transition: all $hover;

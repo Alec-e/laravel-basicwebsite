@@ -5737,6 +5737,10 @@ button.close {
   padding: 20px 0px; }
   .navbar button {
     margin-right: 10px; }
+  .navbar .btn:active, .navbar .btn.active {
+    background: #526476;
+    box-shadow: none;
+    color: #fff; }
   .navbar button:hover {
     background: #526476;
     transition: all 0.5s; }
