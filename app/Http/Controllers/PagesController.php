@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
 use App\Http\Requests;
 
 class PagesController extends Controller
 {
     public function getHome(){
-    	return view('home');
+
+    	$users = User::where("email", "geoherna@outlook.com")->get();
+
+    	return view('home', ["users" => $users]);
     }
     public function getAbout(){
     	return view('about');
