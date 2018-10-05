@@ -8,9 +8,9 @@ use App\Http\Requests;
 
 class PagesController extends Controller
 {
-    public function getHome(){
+    public function index(){
 
-    	$users = User::where("email", "geoherna@outlook.com")->get();
+    	$users = User::where("email", "michele@outlook.com")->get();
 
     	return view('home', ["users" => $users]);
     }
